@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Armenian', sans-serif;
+    background-color: #02081c;
+    color: #e2e8f0;
+  }
+}
+
+/* TV Studio Millionaire Spotlight & Arena Concentric Circles */
+.millionaire-bg {
+  background-color: #02081c;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(13, 71, 161, 0.45) 0%, rgba(2, 26, 75, 0.6) 28%, rgba(2, 11, 34, 0.95) 60%, #010410 100%),
+    radial-gradient(ellipse at 50% 0%, rgba(0, 180, 255, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, transparent 40%, rgba(0, 80, 200, 0.1) 41%, transparent 43%),
+    radial-gradient(circle at 50% 50%, transparent 60%, rgba(0, 140, 255, 0.08) 61%, transparent 63%);
+  background-attachment: fixed;
+}
+
+/* Iconic TV stage light beams */
+.stage-beam-left {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 212, 255, 0.3) 0%, rgba(2, 60, 150, 0.05) 70%, transparent 100%);
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+.stage-beam-right {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 212, 255, 0.3) 0%, rgba(2, 60, 150, 0.05) 70%, transparent 100%);
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+/* Studio ambient rings */
+.studio-arena-ring {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 450px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 180, 255, 0.12);
+  box-shadow: 0 0 80px rgba(0, 102, 255, 0.15) inset, 0 0 60px rgba(0, 140, 255, 0.1);
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(2, 14, 45, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 80, 160, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 180, 255, 0.8);
+}

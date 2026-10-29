@@ -1,0 +1,6 @@
+{
+  "name": "Ո՞վ է ուզում դառնալ միլիոնատեր — Me cuesta",
+  "description": "Ինտերակտիվ իսպաներեն-հայերեն ուսուցողական խաղ «Ո՞վ է ուզում դառնալ միլիոնատեր» ոճով։ 30 զվարճալի հարցեր, թարգմանություններ և բանավոր խոսքի պրակտիկա։",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
